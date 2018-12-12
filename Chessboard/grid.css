@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 50vh;
+    height: 50vh;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+}
+
+div {
+    background-color: black;
+}
+
+div:nth-child(odd) {
+    background-color: #fff;
+}
