@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 300px;
+    height: 400px;
+    margin: 100px auto;
+    font-size: 80px;
+    font-family: sans-serif;
+    color: white;
+    background-color: #ddd;
+    border: 5px solid black;
+}
+
+div {
+    flex-basis: 20%;
+}
+
+.f1 {
+    /* order wprowadza kolejnosc wyswietlania. 0 domyślnie */
+    order: 0;
+    background-color: skyblue;
+    /* flex-grow dzieli wolne pole na kawalki. 0 domyślnie */
+    /* flex-grow: 0; */
+    /* flex-shrink mówi jak dzielona jest przestrzeń nadmiarowa. 1 domyślnie */
+    /* flex-shrink: 2; */
+    /* flex-basis oznacza szerokosc dla row oraz wysokosc dla column ZAWSZE OSI GŁÓWNEJ*/
+    /* flex-basis: 20%; */
+}
+
+.f2 {
+    background-color: darkred;
+    /* flex-grow: 2; */
+}
+
+.f3 {
+    background-color: darkolivegreen;
+    /* flex-grow: 2; */
+}
